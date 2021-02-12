@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="work.css">
+    <title>Literary Work</title>
+</head>
+<body>
+    <div class="menuToggle" onclick="ToggleMenu();">
+        <span></span>
+    </div>
+
+    <div class="navigation">
+       
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="index.html" onmouseenter="changeImage('img/mihajlo1.png')">Home</a>
+                </li>
+                <li>
+                    <a href="coils.html" onmouseenter="changeImage('img/pupin-hall.jpg')">Pupin Coils</a>
+                </li>
+                <li>
+                    <a href="life.html" onmouseenter="changeImage('img/pupin3.jpg')">Life & Education</a>
+                </li>
+                <li>
+                    <a href="work.html" onmouseenter="changeImage('img/books.jpg')">Literary Work</a>
+                </li>
+            </ul>
+            </div>
+            <div class="imgArea">
+                <img src="img/mihajlo1.png" id="slider">
+               </div> 
+               
+        
+                </div>
+
+
+                <table>
+                    <caption>Literary Work</caption>
+                <tr>
+                    <th>Naslov Dela:</th>
+                    <th>Izdavac</th>
+                    <th>Mesto</th>
+                    <th>Godina</th>
+                </tr>
+                <tr>
+                    <td>The osmotic pressure and its relation to free energy, inaugural dissertation to obtain a doctorate</td>
+                    <td>Gustav Shade</td>
+                    <td>Berlin</td>
+                    <td>June, 1889.</td>
+                </tr>
+                <tr>
+                    <td>Thermodynamics of Reversible Cycles in Gases and Saturated Vapors</td>
+                    <td>John Wiley & Sons</td>
+                    <td> / </td>
+                    <td>1894.</td>
+                </tr>
+                <tr>
+                    <td>Serbian Orthodox Church</td>
+                    <td>J. Murray</td>
+                    <td>London</td>
+                    <td>1918.</td>
+                </tr>
+                <td> Yugoslavia. (In Association for International Conciliation Amer. Branch —Yugoslavia)</td>
+                <td>American Association for International Conciliation</td>
+                <td>/</td>
+                <td>1919.</td>
+                <tr>
+                    <td>The New Reformation; from Physical to Spiritual Realities</td>
+                    <td>Scribner</td>
+                    <td>New York</td>
+                    <td>1927.</td>
+                </tr>
+                <tr>
+                    <td>Discussion by M. Pupin and other prominent engineers in “Toward Civilization, edited by C. A. Beard</td>
+                    <td>Longmans, Green& Co.</td>
+                    <td>New York</td>
+                    <td>1930.</td>
+                </tr>
+                </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script>
+                    function changeImage(anything){
+                        document.getElementById('slider').src = anything;
+                    }
+            
+                    function ToggleMenu(){
+                        const menuToggle = document.querySelector('.menuToggle');
+                        const navigation = document.querySelector('.navigation');
+                        menuToggle.classList.toggle('active')
+                        navigation.classList.toggle('active')
+                    }
+            
+                </script>
+</body>
+</html>

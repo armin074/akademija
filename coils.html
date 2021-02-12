@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pupincoils.css">
+    <title>Pupin Coils</title>
+    
+</head>
+<body>
+    <div class="menuToggle" onclick="ToggleMenu();">
+        <span></span>
+    </div>
+
+    <div class="navigation">
+       
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="index.html" onmouseenter="changeImage('img/mihajlo1.png')">Home</a>
+                </li>
+                <li>
+                    <a href="coils.html" onmouseenter="changeImage('img/pupin-hall.jpg')">Pupin Coils</a>
+                </li>
+                <li>
+                    <a href="life.html" onmouseenter="changeImage('img/pupin3.jpg')">Life & Education</a>
+                </li>
+                <li>
+                    <a href="work.html" onmouseenter="changeImage('img/books.jpg')">Literary Work</a>
+                </li>
+            </ul>
+            </div>
+            <div class="imgArea">
+                <img src="img/mihajlo1.png" id="slider">
+               </div>  
+                </div>
+
+        <div class="grid">
+
+            <aside>
+                
+
+        <div class="grad">
+            <img class="sidebar-picture" src="img/mihajlo2.png">
+        </div>
+
+            </aside>
+            
+            <section>
+               
+                <div class="fa-fa1">
+                    <h2>Loading coils,the heaviside condition , and Pupin coils</h2>
+                    <img src="img/map.jpg" id="img">
+    
+                    <p>When we draw schematics, we have the luxury of pretending that wire is free. There are only a few cases where you have to account for the electrical characteristics of wire: when the wire is very long or the frequency on the wire is relatively high. <br><br><br>
+
+                        This became apparent after the first transatlantic cable went into service for telegraph communications. Even though the wire was linear, there was still distortion on the line so severe that dots and dashes would overlap each other. The temporary solution was to limit speeds so slow that operators had trouble sending and receiving at those speeds. How slow? An average character took two minutes to send! That’s not a typo. Two minutes per character. By custom, Morse code assumes a word is five characters, so you could send a word every 10 minutes.
+                        <br><br><br>
+                        The first transatlantic cable went into service in 1858 and was virtually the moon landing of its day. Frustrated with how slow the communications were, an electrician by the name of Whitehouse decided to crank up the voltage to over 1,000 volts which caused the cable to fail after only three weeks in service. Whoops. Later analysis showed the cable was probably going to fail quickly anyway, but Whitehouse took the public blame.
+                        <br><br><br>
+                        The wire back then wasn’t as good as what we have today, which led to some of the problems. The insulation was made from multiple coats of a natural latex, gutta percha, which is what dentists use to fill root canals. The jackets were made from tarred hemp and bound with iron wire. There was no way to build an underwater amplifier in 1858, so the cables were just tremendous wires laying on the ocean floor between Newfoundland and Ireland.</p>
+                     
+              
+                            
+                    <h2>The Solution</h2>
+
+                    <br><br>
+                            <p>If you work through Heaviside’s math, you find out that distortion does not occur in a cable when for a given amount of cable, the ratio of leakage to capacitance is equal to the ratio of resistance to inductance. Mathematically if C is the capacitance per meter, L is the inductance per meter, R is the cable resistance per meter, and G is the shunt conductance (that is, the inverse of the resistance between conductors), you wind up with this formula, known as the Heaviside condition:</p>
+                            <img src="img/formula.png" id="png">
+
+                            <p>Usually, G is very small so G/C will be much less than R/L. So how can you balance the formula? Simply change one of the variables until the ratio works out. Decreasing R is attractive since lower R means less loss, too, but it also means bigger wire or more expensive materials, which is not always practical. Especially when you’re talking about a 2,000-mile cable. Decreasing capacitance has a similar problem. It does change the ratio, but requires more spacing or different insulation. You could increase G, but that will contribute to higher loss, so that’s not something you’d usually want to do.
+                                <br><br>
+                                That leaves the inductance, L. Some long cables have a built-in loading wire with high magnetic permeability to force the inductance higher. There is another way to deal with this and that’s through the use of discrete loading coils regularly spaced along the cable. This isn’t perfect, but it is practical and reduces distortion. These are sometimes called Pupin coils after inventor Michael Pupin. Pupin sued AT&T over a patent from George Campbell who used loading coils on telephone lines. Cambell’s patent was filed after Pupin’s, but the work appears to have been earlier. Heaviside’s work was even earlier, so Pupin probably didn’t have a good claim.
+                                <br><br>
+                                However, the value to AT&T was so large, they settled on buying an option for Pupin’s patent so they could control both patents. Pupin would up with about $455,000 over about 20 years — roughly worth $25 million today. But that was small change compared to AT&T’s savings. Lower distortion on phone lines meant they could use a cable to cover twice the distance they used before. There are estimates that AT&T saved $100 million in the first quarter of the 20 century. That makes the less than $500,000 Pupin got just a drop in the bucket.</p>
+                                
+                                <h2>How times have changed</h2>
+                                <br><br>
+                                <p>It’s hard for the modern mind to even imagine setting up a remote system when your only means of communication with the other side is a letter carried by ship. Bad weather could mean a transatlantic crossing would take weeks. The amount of money spent on the many cable attempts was also staggering. The successful cable took about $1 million. A huge sum in those days. After the first cable failed, some people claimed the whole thing was a hoax; truly the moon landing of its day.
+                                    <br><br>
+                                    Now, of course, wire is better and we don’t have to worry as much about the Heaviside Condition. In addition, you wouldn’t lay a 2,000 mile cable without repeaters. This not only combats loss but takes care of the distortion to some degree. But make no mistake. There are still plenty of undersea cables and they carry a huge amount of data.
+                                    <br><br>
+                                    While the history of technology like this is enjoyable in its own right, you have to consider what lessons you can draw from this story. First, wire is not perfect and behaves in unexpected strange ways that rarely make a difference (until they do). Second, ignoring technical advice for business reasons is often fraught with peril. It would be interesting to do a study on how much money was wasted because no one liked Thomson’s results that the cable would be “slow.” Granted, if the cable had failed anyway, it wouldn’t have been a huge loss, but still, having a cable with less distortion might have prevented the cable from failing as early as it did.
+                                    <br><br>
+                                    Pupin coils are largely a thing of the past. But the story of how they came and went can teach us things today. If you want to know more about the history of the transatlantic cables in more detail and how they evolved, we talked about that before. You might also enjoy the video below.</p>
+                                    <br><br>
+                                    <iframe width="800" height="450"
+
+                                     src="https://www.youtube.com/embed/nV0Wc9Y33so?autoplay=1&mute=1">
+
+                                    </iframe>
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                               
+    
+                                    <a class="but-1" href="index.html">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Back to Home
+                                    </a>
+                                <br><br>
+                                    <br><br>
+                                    <br><br>
+                                    
+                </section>
+           
+
+       
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function changeImage(anything){
+            document.getElementById('slider').src = anything;
+        }
+
+        function ToggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+
+    </script>
+</body>
+</html>

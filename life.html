@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life and Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="life.css">
+</head>
+<body>
+    <div class="menuToggle" onclick="ToggleMenu();">
+        <span></span>
+    </div>
+
+    <div class="navigation">
+       
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="index.html" onmouseenter="changeImage('img/mihajlo1.png')">Home</a>
+                </li>
+                <li>
+                    <a href="coils.html" onmouseenter="changeImage('img/pupin-hall.jpg')">Pupin Coils</a>
+                </li>
+                <li>
+                    <a href="life.html" onmouseenter="changeImage('img/pupin3.jpg')">Life & Education</a>
+                </li>
+                <li>
+                    <a href="work.html" onmouseenter="changeImage('img/books.jpg')">Literary Work</a>
+                </li>
+            </ul>
+            </div>
+            <div class="imgArea">
+                <img src="img/mihajlo1.png" id="slider">
+               </div>  
+                </div>
+
+
+        <section>
+            <div class="page">
+                <h1>Early Life And Education</h1>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+        function changeImage(anything){
+            document.getElementById('slider').src = anything;
+        }
+
+        function ToggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+
+    </script>
+</body>
+</html>
